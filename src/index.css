@@ -50,6 +50,8 @@ All colors MUST be HSL.
     --gradient-cyan: linear-gradient(135deg, hsl(191 95% 55%), hsl(191 95% 35%));
     --gradient-dark: linear-gradient(135deg, hsl(220 15% 8%), hsl(220 15% 12%));
     --gradient-glow: linear-gradient(135deg, hsl(191 95% 55% / 0.1), hsl(267 85% 65% / 0.1));
+    --gradient-hero: linear-gradient(135deg, hsl(191 95% 55%), hsl(267 85% 65%));
+    --gradient-card: linear-gradient(135deg, hsl(220 15% 8% / 0.8), hsl(220 15% 12% / 0.8));
     
     /* Shadows */
     --shadow-glow: 0 0 30px hsl(var(--wania-cyan) / 0.3);
@@ -117,6 +119,44 @@ All colors MUST be HSL.
 }
 
 @layer utilities {
+  /* Text gradients */
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(var(--wania-cyan)), hsl(var(--wania-violet)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Background gradients */
+  .bg-gradient-violet {
+    background: var(--gradient-violet);
+  }
+
+  .bg-gradient-cyan {
+    background: var(--gradient-cyan);
+  }
+
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .bg-gradient-card {
+    background: var(--gradient-card);
+  }
+
+  /* Shadows */
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .shadow-violet-glow {
+    box-shadow: var(--shadow-violet-glow);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
   /* Glow animation */
   .animate-glow {
     animation: glow 2s ease-in-out infinite alternate;
@@ -133,7 +173,7 @@ All colors MUST be HSL.
 
   /* Fade in animation */
   .animate-fade-in {
-    animation: fadeIn 0.6s ease-out;
+    animation: fadeIn 0.6s ease-out forwards;
   }
 
   @keyframes fadeIn {
@@ -161,5 +201,40 @@ All colors MUST be HSL.
       opacity: 1;
       transform: scale(1.2);
     }
+  }
+
+  /* Slide animations */
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Hover effects */
+  .hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px hsl(220 15% 4% / 0.6);
+  }
+
+  /* Smooth transitions */
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .transition-fast {
+    transition: var(--transition-fast);
   }
 }

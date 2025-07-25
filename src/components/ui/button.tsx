@@ -16,10 +16,10 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         // WaniaX Custom Variants
-        "wania-primary": "bg-gradient-violet text-white hover:shadow-violet-glow transform hover:scale-[1.02] font-semibold",
-        "wania-cyan": "bg-gradient-cyan text-white hover:shadow-glow transform hover:scale-[1.02] font-semibold",
-        "wania-dark": "bg-card border border-border text-foreground hover:bg-secondary hover:border-wania-cyan/50 transform hover:scale-[1.02]",
-        "wania-ghost": "text-wania-cyan hover:bg-wania-cyan/10 hover:text-wania-cyan border border-transparent hover:border-wania-cyan/30"
+        "wania-primary": "bg-gradient-to-r from-wania-cyan to-wania-violet text-white hover:shadow-glow hover:scale-105 font-semibold border-0",
+        "wania-cyan": "bg-gradient-to-r from-wania-cyan to-cyan-400 text-white hover:shadow-glow hover:scale-105 font-semibold border-0",
+        "wania-dark": "bg-card border border-border text-foreground hover:bg-secondary hover:border-wania-cyan/50 hover:scale-105",
+        "wania-ghost": "text-wania-cyan hover:bg-wania-cyan/10 hover:text-wania-cyan border border-transparent hover:border-wania-cyan/30 hover:scale-105"
       },
       size: {
         default: "h-11 px-6 py-2",
