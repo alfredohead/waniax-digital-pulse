@@ -48,11 +48,10 @@ const ContactSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-wania-cyan mb-4">
-            Hablemos de tu Proyecto
+            Contacto
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            ¿Listo para transformar tu industria? Contáctanos para una consulta gratuita 
-            y descubre cómo podemos optimizar tus procesos con IA y automatización.
+            ¿Listo para transformar tu negocio? Contáctanos y agenda una consulta personalizada.
           </p>
         </div>
 

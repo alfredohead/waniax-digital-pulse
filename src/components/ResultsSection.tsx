@@ -47,16 +47,15 @@ const results = [
 
 const ResultsSection = () => {
   return (
-    <section className="py-20 px-6 bg-gradient-glow">
+    <section id="casos" className="py-20 px-6 bg-gradient-glow">
       <div className="container mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-wania-cyan mb-4">
-            Resultados que hablan
+            Casos de Éxito
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Nuestras soluciones de automatización e IA han transformado la eficiencia 
-            operativa de más de 150 empresas en toda Latinoamérica.
+            Descubre cómo hemos ayudado a empresas a mejorar su eficiencia y crecimiento a través de la IA aplicada, con resultados tangibles medidos en productividad y reducción de costos.
           </p>
         </div>
 

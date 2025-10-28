@@ -16,14 +16,17 @@ const Header = () => {
           <a href="#inicio" className="text-foreground hover:text-wania-cyan transition-colors duration-300">
             Inicio
           </a>
-          <a href="#soluciones" className="text-foreground hover:text-wania-cyan transition-colors duration-300">
-            Soluciones
-          </a>
-          <a href="#casos" className="text-foreground hover:text-wania-cyan transition-colors duration-300">
-            Casos
-          </a>
           <a href="#nosotros" className="text-foreground hover:text-wania-cyan transition-colors duration-300">
             Nosotros
+          </a>
+          <a href="#servicios" className="text-foreground hover:text-wania-cyan transition-colors duration-300">
+            Servicios
+          </a>
+          <a href="#casos" className="text-foreground hover:text-wania-cyan transition-colors duration-300">
+            Casos de Éxito
+          </a>
+          <a href="#blog" className="text-foreground hover:text-wania-cyan transition-colors duration-300">
+            Blog
           </a>
           <a href="#contacto" className="text-foreground hover:text-wania-cyan transition-colors duration-300">
             Contacto
@@ -31,8 +34,8 @@ const Header = () => {
         </nav>
 
         {/* CTA Button */}
-        <Button variant="wania-primary" size="default">
-          Solicita una demo
+        <Button variant="wania-primary" size="default" onClick={() => document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })}>
+          Solicita una consulta
         </Button>
       </div>
     </header>

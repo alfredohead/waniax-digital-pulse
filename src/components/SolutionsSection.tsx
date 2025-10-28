@@ -1,72 +1,77 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { 
-  Settings, 
   Brain, 
-  Wifi, 
-  Shield 
+  Cog,
+  Bot,
+  BarChart3,
+  Network,
+  GraduationCap
 } from "lucide-react";
 
 const solutions = [
   {
-    title: "Automatización industrial",
-    description: "Soluciones eficientes para plantas y procesos productivos",
-    icon: Settings,
-    gradient: "from-wania-cyan/20 to-wania-blue/20"
-  },
-  {
-    title: "IA aplicada a procesos",
-    description: "Predicción, optimización y toma de decisiones inteligente.",
+    title: "Consultoría Estratégica en IA",
+    description: "Diagnósticos automatizados que detectan oportunidades para implementar IA, estrategia a medida y acompañamiento integral.",
     icon: Brain,
-    gradient: "from-wania-violet/20 to-wania-cyan/20"
+    gradient: "from-wania-cyan/20 to-blue-500/20"
   },
   {
-    title: "IoT e integración de sensores",
-    description: "Recolección de datos en tiempo real de múltiples dispositivos.",
-    icon: Wifi,
-    gradient: "from-wania-blue/20 to-wania-violet/20"
+    title: "Creación de Agentes Inteligentes",
+    description: "Desarrollamos agentes personalizados con LLMs y MCP que combinan autonomía e inteligencia contextual para mejorar la interacción y operación.",
+    icon: Bot,
+    gradient: "from-purple-500/20 to-wania-violet/20"
   },
   {
-    title: "Infraestructura digital segura",
-    description: "Redes, ciberseguridad y conectividad de clase industrial.",
-    icon: Shield,
-    gradient: "from-wania-cyan/20 to-wania-glow/20"
+    title: "Automatización Inteligente",
+    description: "Implementamos RPA junto con IA para automatizar procesos, generar reportes dinámicos y asegurar soporte constante con agentes de voz y chat.",
+    icon: Cog,
+    gradient: "from-cyan-500/20 to-wania-cyan/20"
+  },
+  {
+    title: "Monitoreo y Análisis en Tiempo Real",
+    description: "Incorporamos tecnologías avanzadas para transformar datos visuales y operativos en información estratégica para la toma de decisiones.",
+    icon: BarChart3,
+    gradient: "from-wania-violet/20 to-purple-500/20"
+  },
+  {
+    title: "Integración Técnica",
+    description: "Conectamos soluciones de IA con sistemas ERP, CRM y plataformas existentes para garantizar flujo continuo de datos y eficiencia máxima.",
+    icon: Network,
+    gradient: "from-blue-500/20 to-wania-cyan/20"
+  },
+  {
+    title: "Capacitación y Soporte Continuo",
+    description: "Formamos a tu equipo y proveemos soporte 24/7 con herramientas inteligentes que aseguran adopción y éxito sostenible.",
+    icon: GraduationCap,
+    gradient: "from-purple-500/20 to-wania-violet/20"
   }
 ];
 
 const SolutionsSection = () => {
   return (
-    <section id="soluciones" className="py-20 px-6">
+    <section id="servicios" className="py-20 px-6 bg-muted/30">
       <div className="container mx-auto">
-        {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-wania-cyan mb-4">
-            NUESTRAS SOLUCIONES
+            Servicios
           </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Soluciones integrales de IA para transformar tu negocio
+          </p>
         </div>
 
-        {/* Solutions Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {solutions.map((solution, index) => (
             <Card 
-              key={index} 
-              className="bg-card border-border hover:border-wania-cyan/50 transition-all duration-300 hover:shadow-card group cursor-pointer"
+              key={index}
+              className="group hover:shadow-lg transition-all duration-300 border-muted"
             >
-              <CardHeader className="text-center pb-4">
-                <div className={`w-16 h-16 mx-auto mb-4 rounded-xl bg-gradient-to-br ${solution.gradient} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-                  <solution.icon className="w-8 h-8 text-wania-cyan" />
+              <CardContent className="p-6">
+                <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${solution.gradient} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
+                  <solution.icon className="w-6 h-6 text-wania-cyan" />
                 </div>
-                <CardTitle className="text-xl font-bold text-foreground mb-2">
-                  {solution.title}
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="text-center">
-                <CardDescription className="text-muted-foreground mb-6 leading-relaxed">
-                  {solution.description}
-                </CardDescription>
-                <Button variant="wania-ghost" size="sm" className="w-full">
-                  Más info
-                </Button>
+                <h3 className="text-xl font-semibold mb-3">{solution.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{solution.description}</p>
               </CardContent>
             </Card>
           ))}
