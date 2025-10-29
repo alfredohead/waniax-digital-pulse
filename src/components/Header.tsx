@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/waniax-logo.png";
 
 const Header = () => {
   return (
@@ -6,9 +7,7 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <div className="text-2xl font-bold text-foreground">
-            Wania<span className="text-wania-violet">X</span>
-          </div>
+          <img src={logo} alt="WaniaX Logo" className="h-10 w-auto" />
         </div>
 
         {/* Navigation Menu */}

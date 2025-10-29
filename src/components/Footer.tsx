@@ -1,4 +1,5 @@
 import { Github, Linkedin, Building } from "lucide-react";
+import logo from "@/assets/waniax-logo.png";
 
 const Footer = () => {
   return (
@@ -8,9 +9,7 @@ const Footer = () => {
           {/* Logo and Tagline */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="text-2xl font-bold text-foreground">
-                Wania<span className="text-wania-violet">X</span>
-              </div>
+              <img src={logo} alt="WaniaX Logo" className="h-10 w-auto" />
             </div>
             <p className="text-muted-foreground font-medium">
               Innovación. Eficiencia. Inteligencia.
