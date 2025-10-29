@@ -21,6 +21,12 @@ const Header = () => {
           <a href="#servicios" className="text-foreground hover:text-wania-cyan transition-colors duration-300">
             Servicios
           </a>
+          <a href="#casos" className="text-foreground hover:text-wania-cyan transition-colors duration-300">
+            Casos de Éxito
+          </a>
+          <a href="#blog" className="text-foreground hover:text-wania-cyan transition-colors duration-300">
+            Blog
+          </a>
           <a href="#contacto" className="text-foreground hover:text-wania-cyan transition-colors duration-300">
             Contacto
           </a>
