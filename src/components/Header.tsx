@@ -7,7 +7,7 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <img src={logo} alt="WaniaX Logo" className="h-14 w-auto" />
+          <img src={logo} alt="WaniaX Logo" className="h-20 w-auto" />
         </div>
 
         {/* Navigation Menu */}
