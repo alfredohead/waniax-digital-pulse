@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Logo and Tagline */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <img src={logo} alt="WaniaX Logo" className="h-10 w-auto" />
+              <img src={logo} alt="WaniaX Logo" className="h-14 w-auto" />
             </div>
             <p className="text-muted-foreground font-medium">
               Innovación. Eficiencia. Inteligencia.
