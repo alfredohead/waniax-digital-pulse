@@ -1,4 +1,4 @@
-import { TrendingUp, TrendingDown, Network, Clock, Users, Shield } from "lucide-react";
+import { TrendingUp, TrendingDown, Network, Clock, Shield } from "lucide-react";
 
 const results = [
   {
@@ -28,13 +28,6 @@ const results = [
     description: "Disponibilidad garantizada de nuestros sistemas",
     icon: Clock,
     color: "text-blue-400"
-  },
-  {
-    value: "150+",
-    label: "Clientes satisfechos",
-    description: "Empresas que confían en nuestras soluciones",
-    icon: Users,
-    color: "text-orange-400"
   },
   {
     value: "24/7",
