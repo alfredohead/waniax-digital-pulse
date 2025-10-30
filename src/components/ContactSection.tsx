@@ -6,8 +6,7 @@ import {
   MapPin, 
   Clock,
   MessageSquare,
-  Building2,
-  Globe
+  Building2
 } from "lucide-react";
 
 const contactInfo = [
@@ -140,39 +139,14 @@ const ContactSection = () => {
                 <h3 className="text-xl font-bold text-foreground mb-3">
                   Consulta Gratuita
                 </h3>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed">
                   Videollamada de 30 minutos para analizar necesidades y proponer soluciones.
                 </p>
-                <Button variant="outline" size="lg" className="w-full">
-                  <Globe className="w-4 h-4 mr-2" />
-                  Agendar Reunión
-                </Button>
               </CardContent>
             </Card>
           </div>
         </div>
 
-        {/* Bottom CTA */}
-        <div className="mt-16 text-center">
-          <div className="bg-gradient-to-r from-wania-cyan/5 to-wania-violet/5 rounded-2xl p-8 border border-border/50">
-            <h3 className="text-2xl font-bold text-foreground mb-4">
-              ¿Consulta Urgente?
-            </h3>
-            <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Soporte 24/7 disponible para clientes empresariales.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="wania-primary" size="lg">
-                <Phone className="w-4 h-4 mr-2" />
-                Llamar Ahora
-              </Button>
-              <Button variant="outline" size="lg">
-                <Mail className="w-4 h-4 mr-2" />
-                Email Urgente
-              </Button>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
