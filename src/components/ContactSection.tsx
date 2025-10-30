@@ -24,13 +24,13 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Teléfono",
-    info: "+1 (555) 123-4567",
+    info: "2634725005",
     description: "Lun - Vie, 9AM - 6PM"
   },
   {
     icon: MapPin,
     title: "Ubicación",
-    info: "Ciudad de México, México",
+    info: "Mendoza, Argentina",
     description: "Servicios internacionales"
   },
   {
