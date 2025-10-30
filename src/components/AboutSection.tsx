@@ -7,7 +7,7 @@ const AboutSection = () => {
             Sobre Nosotros
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Waniax es tu socio estratégico en integración de IA. Combinamos experiencia y tecnología para diseñar soluciones personalizadas que transforman la operatividad y competitividad de tu negocio. Nuestro equipo de expertos aplica las últimas innovaciones en agentes conversacionales, automatización inteligente y análisis en tiempo real para brindar resultados concretos y medibles.
+            Integramos IA avanzada en tu negocio con soluciones personalizadas que transforman operaciones y mejoran competitividad.
           </p>
         </div>
       </div>

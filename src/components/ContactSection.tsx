@@ -47,7 +47,7 @@ const ContactSection = () => {
             Contacto
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            ¿Listo para transformar tu negocio? Contáctanos y agenda una consulta personalizada.
+            Conversemos sobre IA para tu negocio
           </p>
         </div>
 
@@ -65,9 +65,7 @@ const ContactSection = () => {
               </div>
 
               <p className="text-muted-foreground mb-8 text-lg leading-relaxed">
-                Conecta directamente con nuestro asistente inteligente de WaniaX por WhatsApp. 
-                Obtén respuestas instantáneas sobre nuestros servicios, agenda consultas o 
-                resuelve tus dudas en tiempo real.
+                Conecta con nuestro asistente IA por WhatsApp para consultas y agendamiento.
               </p>
 
               <div className="space-y-4 mb-8">
@@ -143,9 +141,7 @@ const ContactSection = () => {
                   Consulta Gratuita
                 </h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Agenda una videollamada de 30 minutos para discutir tu proyecto 
-                  sin compromiso. Analizaremos tus necesidades y te propondremos 
-                  soluciones personalizadas.
+                  Videollamada de 30 minutos para analizar necesidades y proponer soluciones.
                 </p>
                 <Button variant="outline" size="lg" className="w-full">
                   <Globe className="w-4 h-4 mr-2" />
@@ -160,11 +156,10 @@ const ContactSection = () => {
         <div className="mt-16 text-center">
           <div className="bg-gradient-to-r from-wania-cyan/5 to-wania-violet/5 rounded-2xl p-8 border border-border/50">
             <h3 className="text-2xl font-bold text-foreground mb-4">
-              ¿Necesitas una Respuesta Inmediata?
+              ¿Consulta Urgente?
             </h3>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Para consultas urgentes o soporte técnico crítico, nuestro equipo 
-              está disponible 24/7 para clientes empresariales.
+              Soporte 24/7 disponible para clientes empresariales.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="wania-primary" size="lg">

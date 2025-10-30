@@ -17,11 +17,7 @@ const HeroSection = () => {
           </h1>
           
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Integración avanzada de inteligencia artificial para optimizar procesos, mejorar la experiencia y potenciar resultados.
-          </p>
-
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Agentes inteligentes, automatización y soporte 24/7 para que tu empresa esté a la vanguardia tecnológica.
+            IA avanzada para optimizar procesos y potenciar resultados.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">

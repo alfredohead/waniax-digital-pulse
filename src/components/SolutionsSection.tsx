@@ -11,37 +11,37 @@ import {
 const solutions = [
   {
     title: "Consultoría Estratégica en IA",
-    description: "Diagnósticos automatizados que detectan oportunidades para implementar IA, estrategia a medida y acompañamiento integral.",
+    description: "Diagnóstico y estrategia personalizada para implementar IA en tu negocio.",
     icon: Brain,
     gradient: "from-wania-cyan/20 to-blue-500/20"
   },
   {
     title: "Creación de Agentes Inteligentes",
-    description: "Desarrollamos agentes personalizados con LLMs y MCP que combinan autonomía e inteligencia contextual para mejorar la interacción y operación.",
+    description: "Agentes conversacionales con LLMs que mejoran interacción y operación.",
     icon: Bot,
     gradient: "from-purple-500/20 to-wania-violet/20"
   },
   {
     title: "Automatización Inteligente",
-    description: "Implementamos RPA junto con IA para automatizar procesos, generar reportes dinámicos y asegurar soporte constante con agentes de voz y chat.",
+    description: "RPA con IA para automatizar procesos y soporte 24/7 con agentes de voz y chat.",
     icon: Cog,
     gradient: "from-cyan-500/20 to-wania-cyan/20"
   },
   {
     title: "Monitoreo y Análisis en Tiempo Real",
-    description: "Incorporamos tecnologías avanzadas para transformar datos visuales y operativos en información estratégica para la toma de decisiones.",
+    description: "Transformamos datos en información estratégica para decisiones acertadas.",
     icon: BarChart3,
     gradient: "from-wania-violet/20 to-purple-500/20"
   },
   {
     title: "Integración Técnica",
-    description: "Conectamos soluciones de IA con sistemas ERP, CRM y plataformas existentes para garantizar flujo continuo de datos y eficiencia máxima.",
+    description: "Conectamos IA con tus sistemas ERP, CRM y plataformas existentes.",
     icon: Network,
     gradient: "from-blue-500/20 to-wania-cyan/20"
   },
   {
     title: "Capacitación y Soporte Continuo",
-    description: "Formamos a tu equipo y proveemos soporte 24/7 con herramientas inteligentes que aseguran adopción y éxito sostenible.",
+    description: "Formación de equipo y soporte 24/7 para garantizar éxito sostenible.",
     icon: GraduationCap,
     gradient: "from-purple-500/20 to-wania-violet/20"
   }

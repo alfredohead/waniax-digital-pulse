@@ -17,7 +17,7 @@ const TransformacionSection = () => {
           </h2>
           
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Más allá de la transformación digital, la <strong>Transformación Inteligente</strong> integra IA para maximizar valor, innovación y escalabilidad. En Waniax, impulsamos esta evolución con tecnologías que anticipan necesidades y resuelven problemas proactivamente, convirtiendo datos en ventajas competitivas.
+            IA que anticipa necesidades, resuelve problemas y convierte datos en ventajas competitivas.
           </p>
         </div>
       </div>
