@@ -1,39 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { 
-  Mail, 
-  Phone, 
-  MapPin, 
-  Clock,
-  MessageSquare
-} from "lucide-react";
-
-const contactInfo = [
-  {
-    icon: Mail,
-    title: "Email",
-    info: "contacto@waniax.com",
-    description: "Respuesta en 24 horas"
-  },
-  {
-    icon: Phone,
-    title: "Teléfono",
-    info: "2634725005",
-    description: "Lun - Vie, 9AM - 6PM"
-  },
-  {
-    icon: MapPin,
-    title: "Ubicación",
-    info: "Mendoza, Argentina",
-    description: "Servicios internacionales"
-  },
-  {
-    icon: Clock,
-    title: "Horarios",
-    info: "24/7 Soporte Crítico",
-    description: "Soporte empresarial"
-  }
-];
+import { MessageSquare } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -49,7 +16,7 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="max-w-2xl mx-auto">
           {/* WhatsApp Chat Card */}
           <Card className="bg-gradient-to-br from-wania-cyan/10 to-wania-violet/10 border-wania-cyan/30 backdrop-blur-sm">
             <CardContent className="p-8">
@@ -96,36 +63,6 @@ const ContactSection = () => {
               </p>
             </CardContent>
           </Card>
-
-          {/* Contact Information */}
-          <div className="grid sm:grid-cols-2 gap-6">
-            {contactInfo.map((item, index) => (
-              <Card 
-                key={index}
-                className="bg-card/30 border-border/30 hover:bg-card/50 hover:border-wania-cyan/30 transition-all duration-300 group animate-fade-in"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <CardContent className="p-6">
-                  <div className="flex flex-col items-center text-center space-y-3">
-                    <div className="w-14 h-14 bg-gradient-to-br from-wania-cyan/20 to-wania-violet/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <item.icon className="w-7 h-7 text-wania-cyan" />
-                    </div>
-                    <div>
-                      <h4 className="text-lg font-semibold text-foreground mb-1">
-                        {item.title}
-                      </h4>
-                      <p className="text-foreground font-medium mb-1">
-                        {item.info}
-                      </p>
-                      <p className="text-sm text-muted-foreground">
-                        {item.description}
-                      </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
         </div>
 
       </div>
