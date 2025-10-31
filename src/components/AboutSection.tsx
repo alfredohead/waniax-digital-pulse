@@ -7,7 +7,7 @@ const AboutSection = () => {
             Sobre Nosotros
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Integramos IA avanzada en tu negocio con soluciones personalizadas que transforman operaciones y mejoran competitividad.
+            Integramos IA avanzada a tu negocio con soluciones personalizadas que transforman operaciones y mejoran competitividad.
           </p>
         </div>
       </div>
