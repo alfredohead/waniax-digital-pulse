@@ -55,7 +55,7 @@ const ContactSection = () => {
                 onClick={() => window.open('https://wa.me/542634725005?text=Hola%2C%20quiero%20conocer%20m%C3%A1s%20sobre%20las%20soluciones%20de%20IA%20de%20WaniaX', '_blank')}
               >
                 <MessageSquare className="w-5 h-5 mr-3" />
-                Iniciar Chat en WhatsApp
+                Conversemos
               </Button>
 
               <p className="text-sm text-muted-foreground text-center mt-4">
