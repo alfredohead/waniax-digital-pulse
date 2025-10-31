@@ -5,8 +5,7 @@ import {
   Phone, 
   MapPin, 
   Clock,
-  MessageSquare,
-  Building2
+  MessageSquare
 } from "lucide-react";
 
 const contactInfo = [
@@ -99,51 +98,33 @@ const ContactSection = () => {
           </Card>
 
           {/* Contact Information */}
-          <div className="space-y-8">
-            {/* Contact Details */}
-            <div className="grid gap-6">
-              {contactInfo.map((item, index) => (
-                <Card 
-                  key={index}
-                  className="bg-card/30 border-border/30 hover:bg-card/50 hover:border-wania-cyan/30 transition-all duration-300 group animate-fade-in"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  <CardContent className="p-6">
-                    <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-gradient-to-br from-wania-cyan/20 to-wania-violet/20 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                        <item.icon className="w-6 h-6 text-wania-cyan" />
-                      </div>
-                      <div className="flex-1">
-                        <h4 className="text-lg font-semibold text-foreground mb-1">
-                          {item.title}
-                        </h4>
-                        <p className="text-foreground font-medium mb-1">
-                          {item.info}
-                        </p>
-                        <p className="text-sm text-muted-foreground">
-                          {item.description}
-                        </p>
-                      </div>
+          <div className="grid sm:grid-cols-2 gap-6">
+            {contactInfo.map((item, index) => (
+              <Card 
+                key={index}
+                className="bg-card/30 border-border/30 hover:bg-card/50 hover:border-wania-cyan/30 transition-all duration-300 group animate-fade-in"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <CardContent className="p-6">
+                  <div className="flex flex-col items-center text-center space-y-3">
+                    <div className="w-14 h-14 bg-gradient-to-br from-wania-cyan/20 to-wania-violet/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <item.icon className="w-7 h-7 text-wania-cyan" />
                     </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-
-            {/* CTA Card */}
-            <Card className="bg-gradient-to-br from-wania-cyan/10 to-wania-violet/10 border-wania-cyan/20">
-              <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-wania-cyan to-wania-violet rounded-2xl flex items-center justify-center mx-auto mb-6">
-                  <Building2 className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="text-xl font-bold text-foreground mb-3">
-                  Consulta Gratuita
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Videollamada de 30 minutos para analizar necesidades y proponer soluciones.
-                </p>
-              </CardContent>
-            </Card>
+                    <div>
+                      <h4 className="text-lg font-semibold text-foreground mb-1">
+                        {item.title}
+                      </h4>
+                      <p className="text-foreground font-medium mb-1">
+                        {item.info}
+                      </p>
+                      <p className="text-sm text-muted-foreground">
+                        {item.description}
+                      </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
 
